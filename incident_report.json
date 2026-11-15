@@ -1,0 +1,401 @@
+{
+  "generated_at": "2026-11-15T00:03:51.908753Z",
+  "total_events_analyzed": 60,
+  "anomalies_detected": 25,
+  "anomaly_rate_pct": 41.67,
+  "feature_drift_psi": {
+    "latency_ms": {
+      "psi": 3.6648,
+      "status": "DRIFT_DETECTED"
+    },
+    "error_rate": {
+      "psi": 0.0076,
+      "status": "STABLE"
+    },
+    "cpu_load": {
+      "psi": 1.3603,
+      "status": "DRIFT_DETECTED"
+    },
+    "tx_volume": {
+      "psi": 0.4644,
+      "status": "DRIFT_DETECTED"
+    }
+  },
+  "incident_log": [
+    {
+      "timestamp": "2026-10-01T10:34:00",
+      "service": "payment-worker",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 6.257,
+      "root_cause_feature": "latency_ms",
+      "root_cause_z": 11.038,
+      "feature_z_scores": {
+        "latency_ms": 11.038,
+        "error_rate": 0.78,
+        "cpu_load": 5.646,
+        "tx_volume": 1.509
+      }
+    },
+    {
+      "timestamp": "2026-10-01T10:35:00",
+      "service": "inventory-sync",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 5.114,
+      "root_cause_feature": "latency_ms",
+      "root_cause_z": 8.106,
+      "feature_z_scores": {
+        "latency_ms": 8.106,
+        "error_rate": 1.262,
+        "cpu_load": 6.095,
+        "tx_volume": 0.424
+      }
+    },
+    {
+      "timestamp": "2026-10-01T10:39:00",
+      "service": "inventory-sync",
+      "is_anomaly": true,
+      "severity": "WARNING",
+      "multivariate_score": 1.476,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 2.823,
+      "feature_z_scores": {
+        "latency_ms": 0.718,
+        "error_rate": 0.359,
+        "cpu_load": 2.823,
+        "tx_volume": 0.313
+      }
+    },
+    {
+      "timestamp": "2026-10-01T10:46:00",
+      "service": "payment-worker",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 14.026,
+      "root_cause_feature": "error_rate",
+      "root_cause_z": 27.757,
+      "feature_z_scores": {
+        "latency_ms": 0.082,
+        "error_rate": 27.757,
+        "cpu_load": 0.764,
+        "tx_volume": 3.984
+      }
+    },
+    {
+      "timestamp": "2026-10-01T10:57:00",
+      "service": "checkout-api",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 6.679,
+      "root_cause_feature": "latency_ms",
+      "root_cause_z": 11.619,
+      "feature_z_scores": {
+        "latency_ms": 11.619,
+        "error_rate": 1.076,
+        "cpu_load": 6.449,
+        "tx_volume": 0.816
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:00:00",
+      "service": "auth-gateway",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 2.375,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 4.376,
+      "feature_z_scores": {
+        "latency_ms": 1.671,
+        "error_rate": 0.436,
+        "cpu_load": 4.376,
+        "tx_volume": 0.651
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:01:00",
+      "service": "checkout-api",
+      "is_anomaly": true,
+      "severity": "WARNING",
+      "multivariate_score": 2.227,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 3.368,
+      "feature_z_scores": {
+        "latency_ms": 2.638,
+        "error_rate": 0.105,
+        "cpu_load": 3.368,
+        "tx_volume": 1.23
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:02:00",
+      "service": "payment-worker",
+      "is_anomaly": true,
+      "severity": "WARNING",
+      "multivariate_score": 2.097,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 3.63,
+      "feature_z_scores": {
+        "latency_ms": 2.072,
+        "error_rate": 0.341,
+        "cpu_load": 3.63,
+        "tx_volume": 0.018
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:03:00",
+      "service": "inventory-sync",
+      "is_anomaly": true,
+      "severity": "WARNING",
+      "multivariate_score": 1.917,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 3.046,
+      "feature_z_scores": {
+        "latency_ms": 2.193,
+        "error_rate": 0.222,
+        "cpu_load": 3.046,
+        "tx_volume": 0.749
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:04:00",
+      "service": "auth-gateway",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 3.037,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 5.076,
+      "feature_z_scores": {
+        "latency_ms": 3.241,
+        "error_rate": 0.262,
+        "cpu_load": 5.076,
+        "tx_volume": 0.748
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:05:00",
+      "service": "checkout-api",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 2.664,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 4.471,
+      "feature_z_scores": {
+        "latency_ms": 2.786,
+        "error_rate": 0.276,
+        "cpu_load": 4.471,
+        "tx_volume": 0.748
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:06:00",
+      "service": "payment-worker",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 2.645,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 4.253,
+      "feature_z_scores": {
+        "latency_ms": 2.109,
+        "error_rate": 1.238,
+        "cpu_load": 4.253,
+        "tx_volume": 1.981
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:07:00",
+      "service": "inventory-sync",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 3.02,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 5.662,
+      "feature_z_scores": {
+        "latency_ms": 2.05,
+        "error_rate": 0.446,
+        "cpu_load": 5.662,
+        "tx_volume": 0.156
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:08:00",
+      "service": "auth-gateway",
+      "is_anomaly": true,
+      "severity": "WARNING",
+      "multivariate_score": 2.174,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 3.034,
+      "feature_z_scores": {
+        "latency_ms": 2.786,
+        "error_rate": 0.076,
+        "cpu_load": 3.034,
+        "tx_volume": 1.39
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:09:00",
+      "service": "checkout-api",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 15.439,
+      "root_cause_feature": "error_rate",
+      "root_cause_z": 30.665,
+      "feature_z_scores": {
+        "latency_ms": 0.919,
+        "error_rate": 30.665,
+        "cpu_load": 0.543,
+        "tx_volume": 3.459
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:10:00",
+      "service": "payment-worker",
+      "is_anomaly": true,
+      "severity": "WARNING",
+      "multivariate_score": 2.346,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 3.474,
+      "feature_z_scores": {
+        "latency_ms": 2.878,
+        "error_rate": 1.238,
+        "cpu_load": 3.474,
+        "tx_volume": 0.36
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:11:00",
+      "service": "inventory-sync",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 2.86,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 5.011,
+      "feature_z_scores": {
+        "latency_ms": 1.635,
+        "error_rate": 1.95,
+        "cpu_load": 5.011,
+        "tx_volume": 1.066
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:12:00",
+      "service": "auth-gateway",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 3.149,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 5.493,
+      "feature_z_scores": {
+        "latency_ms": 2.05,
+        "error_rate": 0.527,
+        "cpu_load": 5.493,
+        "tx_volume": 2.238
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:13:00",
+      "service": "checkout-api",
+      "is_anomaly": true,
+      "severity": "WARNING",
+      "multivariate_score": 2.176,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 3.562,
+      "feature_z_scores": {
+        "latency_ms": 2.194,
+        "error_rate": 0.18,
+        "cpu_load": 3.562,
+        "tx_volume": 1.183
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:14:00",
+      "service": "payment-worker",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 2.514,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 4.125,
+      "feature_z_scores": {
+        "latency_ms": 2.82,
+        "error_rate": 0.313,
+        "cpu_load": 4.125,
+        "tx_volume": 0.463
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:15:00",
+      "service": "inventory-sync",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 3.15,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 5.83,
+      "feature_z_scores": {
+        "latency_ms": 1.651,
+        "error_rate": 1.494,
+        "cpu_load": 5.83,
+        "tx_volume": 0.856
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:16:00",
+      "service": "auth-gateway",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 3.725,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 6.644,
+      "feature_z_scores": {
+        "latency_ms": 2.684,
+        "error_rate": 1.151,
+        "cpu_load": 6.644,
+        "tx_volume": 1.684
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:17:00",
+      "service": "checkout-api",
+      "is_anomaly": true,
+      "severity": "WARNING",
+      "multivariate_score": 2.01,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 3.218,
+      "feature_z_scores": {
+        "latency_ms": 2.203,
+        "error_rate": 0.91,
+        "cpu_load": 3.218,
+        "tx_volume": 0.347
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:18:00",
+      "service": "payment-worker",
+      "is_anomaly": true,
+      "severity": "CRITICAL",
+      "multivariate_score": 2.921,
+      "root_cause_feature": "cpu_load",
+      "root_cause_z": 5.49,
+      "feature_z_scores": {
+        "latency_ms": 1.335,
+        "error_rate": 0.133,
+        "cpu_load": 5.49,
+        "tx_volume": 1.477
+      }
+    },
+    {
+      "timestamp": "2026-10-01T11:19:00",
+      "service": "inventory-sync",
+      "is_anomaly": true,
+      "severity": "WARNING",
+      "multivariate_score": 2.573,
+      "root_cause_feature": "latency_ms",
+      "root_cause_z": 3.636,
+      "feature_z_scores": {
+        "latency_ms": 3.636,
+        "error_rate": 1.89,
+        "cpu_load": 2.785,
+        "tx_volume": 1.393
+      }
+    }
+  ]
+}
